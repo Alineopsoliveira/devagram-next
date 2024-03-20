@@ -3,7 +3,7 @@ import type { RespostaPadraoMsg } from '../types/RepostaPadraoMsg';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
 
-export const ValidarTokenJWT = (handler: NextApiHandler) =>
+export const validarTokenJWT = (handler: NextApiHandler) =>
   (req: NextApiRequest, res: NextApiResponse<RespostaPadraoMsg>) => {
 
         try{

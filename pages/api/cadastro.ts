@@ -13,7 +13,7 @@ const handler = nc ()
     .post( async (req : NextApiRequest, res : NextApiResponse<RespostaPadraoMsg>) => {
             
                 try{
-                    console.log('cadastro endpoint', req.body); //teste
+                    
                 const usuario = req.body as CadastroRequisicao;
         
         
@@ -37,7 +37,7 @@ const handler = nc ()
                 
                 //enviar a imagem do multer para o cosmic
                 const image = await uploadImagemCosmic(req)
-                console.log(image)
+                
 
                 //Salvar no banco de dados
                 const usuarioAserSalvo = {

@@ -27,7 +27,7 @@ const PesquisaEndpoint = async (
                             {email : {$regex : filtro, $options : 'i'}}]
                     });
                     
-                    usuariosEncontrados.senha = null;
+                   
                     return res.status(200).json(usuariosEncontrados);
                 }
 
